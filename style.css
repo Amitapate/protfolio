@@ -1,0 +1,239 @@
+/* Container for the background video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Sends the video behind the content */
+}
+
+/* Styling the video to cover the background */
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover; /* Ensures the video covers the background without distortion */
+}
+
+/* Content styling to ensure visibility on top of the video */
+.content {
+    position: relative;
+    z-index: 1; /* Ensures the content stays on top of the video */
+    color: white;
+    text-align: center;
+    top: 30vh;
+}
+
+/* General Styles: Basic reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styling: Sets font, background, and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0b;
+    color: #333;
+}
+
+/* Header styling: Sets the background, padding, and layout */
+header {
+    color: #0f2804;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling in header */
+header .logo {
+    font-size: 24px;
+    color:#000000;
+    background-color:rgb(255, 250, 250);
+}
+
+/* Navigation menu styling */
+header ul {
+    list-style: none;
+    display:flex;
+    gap: 20px;
+}
+
+/* Navigation links styling */
+header ul li a {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #000000;
+}
+
+/*hero Section: Full screen height with centered content */
+.hero {
+    color: rgb(5, 5, 5);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Call-to-action button in the hero section */
+.hero .cta-button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color:rgb(12, 12, 12);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #b00810;
+}
+
+/* About, Skills, Projects, and Contact section padding and text alignment */
+.about, .skills, .projects, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Skills section: Flexbox container for skill categories */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Individual skill boxes */
+.skill {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects section: Background color and grid layout */
+.projects {
+    background-color: #f9f9f9;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Project cards styling */
+.project-card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Links in project cards */
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e50914;
+    text-decoration: none;
+}
+
+/* Contact form styling */
+.contact form {
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    align-items:center;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Contact form button */
+.contact form button {
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #b00810;
+}
+
+/* Footer section styling */
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Social media icons in footer */
+footer .social-icons img {
+    width: 25px;
+    margin: 0 
+}
+.logo h6 {
+    shape-image-threshold: inherit;
+  
+}
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:1666px;
+    height:2000px;
+    background-repeat: no-repeat;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqdErsHNUwWRAQdzPkxl8XMUv28zLR_LMIDi5fTBgNZOLPPbFArC1CQEhjFPnMwocHX4k&usqp=CAU');
+    background-position: left;
+    filter: saturate(1%); /* Adjust saturation here */
+    z-index:-1; /* Ensure the image is behind other content */
+}
+.social-icons {
+    display: flex;          /* Aligns icons in a row */
+    justify-content:space-around;
+    
+}
+.large-text { /* Larger size for the entire paragraph */
+    background-color: #fff;
+    border-color: chocolate;
+    border-radius: 5%;
+}
+
+.highlight {
+    color: orange;
+    font-size: 24px; /* Larger size specifically for BCA */
+}
+
